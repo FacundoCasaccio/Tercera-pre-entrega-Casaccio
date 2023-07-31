@@ -23,4 +23,4 @@ Busqueda de datos:
 - Si se encuentran resultados, el usuario podra ver una tabla con los resultados que coincidan con los parametros de la busqueda
 
 
-![tiendaMusica](https://github.com/FacundoCasaccio/Tercera-pre-entrega-Casaccio/assets/98364107/080a05fd-7c8f-4f7f-bd5f-97ca8ed17fe0)
+

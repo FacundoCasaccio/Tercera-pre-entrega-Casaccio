@@ -1,0 +1,30 @@
+{% extends 'aplication/index.html' %}
+{% load static %}
+
+
+{% block titulo %}
+Discos
+{% endblock titulo %}
+
+{% block contenido %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Artista</th>
+            <th>Album</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for disco in discos %}
+    <tr>
+        <td>{{ disco.id }}</td>
+        <td>{{ disco.artista }}</td>
+        <td>{{ disco.album }}</td>
+        <td>{{ disco.precio }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}

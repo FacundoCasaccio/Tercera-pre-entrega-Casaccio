@@ -1,0 +1,30 @@
+{% extends 'aplication/index.html' %}
+{% load static %}
+
+
+{% block titulo %}
+Remeras
+{% endblock titulo %}
+
+{% block contenido %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Modelo</th>
+            <th>Color</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for remera in remeras %}
+    <tr>
+        <td>{{ remera.id }}</td>
+        <td>{{ remera.modelo }}</td>
+        <td>{{ remera.color }}</td>
+        <td>{{ remera.precio }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}

@@ -1,0 +1,35 @@
+{% extends 'aplication/index.html' %}
+{% load static %}
+
+
+{% block titulo %}
+Resultados Busqueda
+{% endblock titulo %}
+    
+{% block contenido %}
+<div>
+    <h3>{{tipo}}s de {{marca}}</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Instrumento</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for instrumento in instrumentos %}
+        <tr>
+            <td>{{ instrumento.id }}</td>
+            <td>{{ instrumento.tipo }}</td>
+            <td>{{ instrumento.marca }}</td>
+            <td>{{ instrumento.modelo }}</td>
+            <td>{{ instrumento.precio }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock contenido %}
